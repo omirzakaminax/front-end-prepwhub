@@ -1,0 +1,371 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif;
+    
+     
+}
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+  }
+  
+  a:visited,
+  a:hover,
+  a:focus,
+  a:active {
+    color: inherit; /* Ensures the color stays the same in all states */
+    text-decoration: none; /* Ensures no underline in all states */
+    outline: none; /* Removes outline when focused */
+  }
+header {
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+    
+}
+header.red {
+    background-color: #E0D6D9;
+  }
+  
+  main {
+    margin-top: 70px; /* height of header */
+    padding: 20px;
+  }
+  
+  section {
+    height: 2000px; /* to make the page scrollable */
+  }
+
+html {
+    height: 1000px;
+}
+
+.menu-container {
+    position: relative;
+    align-self: center;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.menu-toggle {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+
+
+    
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #0D1445;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+    border-radius: 8px;
+}
+
+.menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 150px;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-open .menu {
+    display: flex;
+}
+
+.menu-open .top {
+    transform: translateY(9px) rotate(135deg);
+    background-color: #0D1445;
+}
+
+.menu-open .middle {
+    opacity: 0;
+}
+
+.menu-open .bottom {
+    transform: translateY(-9px) rotate(-135deg);
+    background-color: #0D1445;
+}
+
+.hidden {
+    display: none;
+  }
+  
+#infoBlock { 
+    height: 400px;
+    width: 200px;
+    background-color: #0D1445;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    margin: 50px;
+}
+li:hover {
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* .list {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+
+
+
+
+.right-header,
+.left-header {
+    display: flex;
+    /* width: 30%;
+    
+    justify-content: space-around; */
+
+}
+
+i, .c {
+    font-size: 30px;
+    align-self: center;
+    /* margin: 0 50px 0 50px; */
+    cursor: pointer;
+    
+}
+.fa-search {
+    margin: 0 30px 0 10px;
+}
+.fa-user {
+    margin-right: 50px ;
+}
+h1 {
+    text-shadow: #AD525E 1px 0 10px;
+    align-self: center;
+}
+
+.search-type {
+    border-radius: 30px;
+    height: 20px;
+    align-self: center;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.header-content {
+    font-size: 25px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    align-self: center;
+    margin: 0 25px 0 0;
+    font-weight: 500;
+    
+}
+
+.not-header {
+    margin-top: 100px;
+    display: flex;
+}
+
+#tips {
+    
+    margin-bottom: 10px;
+}
+
+.hidden-content {
+    
+    display: none;
+}
+
+.header-content:hover + .hidden-content {
+    display: block;
+    
+}
+
+/* .hidden-content:hover + .hidden-content{
+    display: block;
+}
+ */
+ .div {
+    margin-top: 25px;
+ }
+
+
+ .mantra-bg {
+    height: 1000px;
+    width: 40%;
+    background-color: #AD525E;
+    color: white;
+    padding: 100px;
+}
+ .big-text {
+    
+    font-size: 50px;
+ }
+
+ .box {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  
+    
+    
+    height: 250px;
+    width: 200px;
+    margin: 100px auto;
+    background: white;
+    border-radius: 5px;
+
+    overflow: hidden;
+  }
+  
+
+ .box3 {
+    height: 350px;
+    width: 350px;
+ } 
+.woman-img {
+    width: 350px;
+    height: 200px;
+}
+.article-text {
+    padding: 8px;
+    
+}
+.description {
+    font-size: 13px;
+}
+.major-img {
+    height: 130px;
+    width: 200px;
+}
+.schol-img {
+    height: 100px;
+    width: 200px;
+}
+.box4 {
+    height: 200px;
+    width: 300px;
+}
+.network-img {
+    height: 100px;
+    width: 300px;
+}
+
+.aa {
+    padding: 50px;
+    margin-top: -100px;
+}
+.bb {
+    padding: 30px;
+    margin-top: -100px;
+}
+
+.quote-gen {
+    margin-top: 100px;
+    height: 130px;
+    width: 300px;
+    background-color: #bfbfdb;
+    border-radius: 5px;
+    padding: 10px;
+    color: #0D1445;
+}
+#quote {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+#author {
+    font-style: italic;
+}
+#getQuoteButton {
+      align-items: center;
+      background-color: #0D1445;
+      background-position: 0 0;
+      border: 1px solid #bfbfdb;
+      border-radius: 11px;
+      box-sizing: border-box;
+      color: #bfbfdb;
+      cursor: pointer;
+      display: flex;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 33.4929px;
+      list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+      padding: 2px 12px;
+      text-align: left;
+      text-decoration: none;
+      text-shadow: none;
+      text-underline-offset: 1px;
+      transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      word-break: break-word;
+      margin-bottom: 5px;
+    }
+    
+    .button-45:active,
+    .button-45:hover,
+    .button-45:focus {
+      outline: 0;
+    }
+    
+    
+    .button-45:active {
+      background-color: #D33A2C;
+      box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+      color: #FFFFFF;
+    }
+    
+    .button-45:hover {
+      background-color: #FFE3E3;
+      border-color: #FAA4A4;
+    }
+    
+    .button-45:active:hover,
+    .button-45:focus:hover,
+    .button-45:focus {
+      background-color: #D33A2C;
+      box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+      color: #FFFFFF;
+    }
+
+
+
+
+
